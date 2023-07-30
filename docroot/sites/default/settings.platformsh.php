@@ -8,6 +8,14 @@ use Drupal\Core\Installer\InstallerKernel;
 
 $platformsh = new \Platformsh\ConfigReader\Config();
 
+if (PHP_SAPI !== 'cli') {
+  if (defined('MAINTENANCE_MODE') && constant('MAINTENANCE_MODE') === 'install')
+    ini_set('memory_limit', '2048M');
+  else {
+    ini_set('memory_limit', '512M');
+  }
+}
+
 // Configure the database.
 if ($platformsh->hasRelationship('database')) {
   $creds = $platformsh->credentials('database');
@@ -30,7 +38,7 @@ if ($platformsh->hasRelationship('database')) {
 // on development but not production.
 if (isset($platformsh->branch)) {
   // Production type environment.
-  if ($platformsh->onProduction() || $platformsh->onDedicated()) {
+  if ($platformsh->branch == 'master' || $platformsh->onDedicated()) {
     $config['system.logging']['error_level'] = 'hide';
   } // Development type environment.
   else {
@@ -163,3 +171,25 @@ foreach ($platformsh->variables() as $name => $value) {
       break;
   }
 }
+
+// SOLR setup config https://docs.platform.sh/frameworks/drupal8/solr.html
+/*
+$platformsh->registerFormatter('drupal-solr', function($solr) {
+    // Default the solr core name to `collection1` for pre-Solr-6.x instances.
+    return [
+      'core' => substr($solr['path'], 5) ? : 'collection1',
+      'path' => '',
+      'host' => $solr['host'],
+      'port' => $solr['port'],
+    ];
+  });
+
+// Update these values to the relationship name (from .platform.app.yaml)
+// and the machine name of the server from your Drupal configuration.
+$relationship_name = 'solrsearch';
+$solr_server_name = 'default_solr_server';
+if ($platformsh->hasRelationship($relationship_name)) {
+  // Set the connector configuration to the appropriate value, as defined by the formatter above.
+  $config['search_api.server.' . $solr_server_name]['backend_config']['connector_config'] = $platformsh->formattedCredentials($relationship_name, 'drupal-solr');
+}
+*/

@@ -1,233 +1,24 @@
+# Varbase Project Template for Platform.sh
 
-<p align="right">
-<a href="https://platform.sh">
-<img src="https://platform.sh/logos/redesign/Platformsh_logo_black.svg" width="150px">
-</a>
-</p>
+This project provides a starter kit for Varbase 10.0.x projects hosted on [Platform.sh](http://platform.sh). It
+is very closely based on the [Varbase Composer project](https://github.com/Vardot/varbase-project).
 
-<p align="center">
-<a href="https://www.drupal.org/">
-<img src="header.svg">
-</a>
-</p>
-
-<h1 align="center">Deploy Drupal 10 on Platform.sh</h1>
-
-<p align="center">
-<strong>Contribute, request a feature, or check out our resources</strong>
-<br />
-<br />
-<a href="https://community.platform.sh"><strong>Join our community</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://docs.platform.sh"><strong>Documentation</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://platform.sh/blog"><strong>Blog</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/drupal10/issues/new?assignees=&labels=bug&template=bug_report.yml"><strong>Report a bug</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/drupal10/issues/new?assignees=&labels=feature+request&template=improvements.yml"><strong>Request a feature</strong></a>
-<br /><br />
-</p>
-
-<p align="center">
-<a href="https://github.com/platformsh-templates/drupal10/issues">
-<img src="https://img.shields.io/github/issues/platformsh-templates/drupal10.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Issues" alt="Open issues" />
-</a>&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/drupal10/pulls">
-<img src="https://img.shields.io/github/issues-pr/platformsh-templates/drupal10.svg?style=for-the-badge&labelColor=f4f2f3&color=ffd9d9&label=Pull%20requests" alt="Open PRs" />
-</a>&nbsp&nbsp
-<a href="https://github.com/platformsh-templates/drupal10/blob/master/LICENSE">
-<img src="https://img.shields.io/static/v1?label=License&message=MIT&style=for-the-badge&labelColor=f4f2f3&color=ffd9d9" alt="License" />
-</a>&nbsp&nbsp
-<br /><br />
-<a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml&utm_campaign=deploy_on_platform?utm_medium=button&utm_source=affiliate_links&utm_content=https://raw.githubusercontent.com/platformsh-templates/drupal10/updates/.platform.template.yaml" target="_blank" title="Deploy with Platform.sh"><img src="https://platform.sh/images/deploy/deploy-button-lg-blue.svg" width="175px"></a>
-</p>
-</p>
-
-<hr>
-
-<p align="center">
-<strong>Contents</strong>
-<br /><br />
-<a href="#about"><strong>About</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#getting-started"><strong>Getting started</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#migrate"><strong>Migrate</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#learn"><strong>Learn</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<a href="#contribute"><strong>Contribute</strong></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-<br />
-</p>
-<hr>
-
-## About
-
-This template builds Drupal 10 using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching. The Drupal installer will skip asking for database credentials as they are already provided.
+This template builds Drupal ~10.1.0 using the "Drupal Recommended" Composer project.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.
 
 Drupal is a flexible and extensible PHP-based CMS framework.
 
-### Features
+## Services
 
-- PHP 8.0
+- PHP 8.1
 - MariaDB 10.4
 - Redis 6
 - Drush included
 - Automatic TLS certificates
 - Composer-based build
 
-
-## Getting started
-
-### Deploy
-
-#### Quickstart
-
-
-The quickest way to deploy this template on Platform.sh is by clicking the button below.
-This will automatically create a new project and initialize the repository for you.
-
-<p align="center">
-    <a href="https://console.platform.sh/projects/create-project/?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal10/.platform.template.yaml">
-        <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="170px" />
-    </a>
-</p>
-<br/>
-
-
-
-You can also quickly recreate this project locally with the following command:
-
-```bash
-composer create-project platformsh/drupal10 -s dev
-```
-
-
-> **Note:**
->
-> Platform.sh templates prioritize upstream release versions over our own. Despite this, we update template dependencies on a scheduled basis independent of those upstreams. Because of this, template repos do not contain releases. This may change in the future, but until then the `-s dev` flag is necessary to use `composer create-project`.
-
-
-
-#### Other deployment options
-
-For all of the other options below, clone this repository first:
-
-```bash
-git clone https://github.com/platformsh-templates/drupal10
-```
-
-If you're trying to deploy from GitHub, you can generate a copy of this repository first in your own namespace by clicking the [Use this template](https://github.com/platformsh-templates/drupal10/generate) button at the top of this page.
-
-Then you can clone a copy of it locally with `git clone git@github.com:YOUR_NAMESPACE/drupal10.git`.
-
-
-<details>
-<summary>Deploy directly to Platform.sh from the command line</summary>
-<!-- <blockquote>
-<br/> -->
-
-1. Create a free trial:
-
-   [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
-
-1. Install the Platform.sh CLI
-
-   #### Linux/OSX
-
-   ```bash
-   curl -sS https://platform.sh/cli/installer | php
-   ```
-
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
-   You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
-
-1. Set the project remote
-
-   Find your `PROJECT_ID` by running the command `platform project:list`
-
-   ```bash
-   +---------------+------------------------------------+------------------+---------------------------------+
-   | ID            | Title                              | Region           | Organization                    |
-   +---------------+------------------------------------+------------------+---------------------------------+
-   | PROJECT_ID    | Your Project Name                  | xx-5.platform.sh | your-username                   |
-   +---------------+------------------------------------+------------------+---------------------------------+
-   ```
-
-   Then from within your local copy, run the command `platform project:set-remote PROJECT_ID`.
-
-1. Push
-
-   ```bash
-   git push platform DEFAULT_BRANCH
-   ```
-
-<!-- <br/>
-</blockquote> -->
-</details>
-
-<details>
-<summary>Integrate with a GitHub repo and deploy pull requests</summary>
-<!-- <blockquote>
-<br/> -->
-
-1. Create a free trial:
-
-   [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to whatever you have set at `https://YOUR_NAMESPACE/nextjs-drupal`.
-
-1. Install the Platform.sh CLI
-
-   #### Linux/OSX
-
-   ```bash
-   curl -sS https://platform.sh/cli/installer | php
-   ```
-
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
-   You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
-
-1. Setup the integration:
-
-   Consult the [GitHub integration documentation](https://docs.platform.sh/integrations/source/github.html#setup) to finish connecting your repository to a project on Platform.sh. You will need to create an Access token on GitHub to do so.
-
-<!-- <br/>
-</blockquote> -->
-</details>
-
-<details>
-<summary>Integrate with a GitLab repo and deploy merge requests</summary>
-<!-- <blockquote>
-<br/> -->
-
-1. Create a free trial:
-
-   [Register for a 30 day free trial with Platform.sh](https://auth.api.platform.sh/register). When you have completed signup, select the **Create from scratch** project option. Give you project a name, and select a region where you would like it to be deployed. As for the *Production environment* option, make sure to match it to this repository's settings, or to what you have updated the default branch to locally.
-
-1. Install the Platform.sh CLI
-
-   #### Linux/OSX
-
-   ```bash
-   curl -sS https://platform.sh/cli/installer | php
-   ```
-
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
-   You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
-
 1. Create the repository
 
-   Create a new repository on GitLab, set it as a new remote for your local copy, and push to the default branch.
+   Create a new repository on GitLab, set it as a new remote for your local copy, and push to the default branch. 
 
 1. Setup the integration:
 
@@ -325,7 +116,7 @@ In general, the steps are as follows:
 <details>
 <summary>Drupal: using Lando</summary><br />
 
-Lando supports PHP applications [configured to run on Platform.sh](https://docs.platform.sh/development/local/lando.html), and pulls from the same container registry Platform.sh uses on your remote environments during your local builds through its own [recipe and plugin](https://docs.lando.dev/platformsh/).
+Lando supports PHP applications [configured to run on Platform.sh](https://docs.platform.sh/development/local/lando.html), and pulls from the same container registry Platform.sh uses on your remote environments during your local builds through its own [recipe and plugin](https://docs.lando.dev/platformsh/). 
 
 1. [Install Lando](https://docs.lando.dev/getting-started/installation.html).
 1. Make sure Docker is already running - Lando will attempt to start Docker for you, but it's best to have it running in the background before beginning.
@@ -366,13 +157,13 @@ If you already have a codebase you are trying to migrate, move onto the next ste
 
 
 ```bash
-$ mkdir drupal10 && cd drupal10
+$ mkdir varbase10 && cd varbase10
 $ git init
-$ git remote add upstream https://github.com/drupal/recommended-project.git
+$ git remote add upstream https://github.com/Vardot/platformsh-varbase10.git
 $ git branch -m main
 $ git fetch --all --depth=2
 $ git fetch --all --tags
-$ git merge --allow-unrelated-histories -X theirs 10.0.0-rc1
+$ git merge --allow-unrelated-histories -X theirs 10.0.0
 
 ```
 
@@ -421,10 +212,13 @@ Run the commands below to reproduce the dependencies in this template.
 ```bash
 $ composer require platformsh/config-reader drush/drush drupal/redis
 $ composer config allow-plugins.composer/installers true --no-plugins
+$ composer config allow-plugins.cweagans/composer-patches true --no-plugins
+$ composer config allow-plugins.oomphinc/composer-installers-extender true --no-plugins
 $ composer config allow-plugins.drupal/core-composer-scaffold true --no-plugins
 $ composer config allow-plugins.drupal/core-project-message true --no-plugins
-$ composer config allow-plugins.cweagans/composer-patches true --no-plugins
-
+$ composer config allow-plugins.phpstan/extension-installer true --no-plugins
+$ composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true --no-plugins
+$ composer config allow-plugins.vardot/varbase-updater true --no-plugins
 ```
 
 
@@ -451,12 +245,6 @@ Your repository now has all of the code it needs in order to deploy to Platform.
    curl -sS https://platform.sh/cli/installer | php
    ```
 
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
 
    You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
 
@@ -535,18 +323,11 @@ Your repository now has all of the code it needs in order to deploy to Platform.
    curl -sS https://platform.sh/cli/installer | php
    ```
 
-   #### Windows
-
-   ```bash
-   curl -f https://platform.sh/cli/installer -o cli-installer.php
-   php cli-installer.php
-   ```
-
    You can verify the installation by logging in (`platformsh login`) and listing your projects (`platform project:list`).
 
 1. Create the repository
 
-   Create a new repository on GitLab, set it as a new remote for your local copy, and push to the default branch.
+   Create a new repository on GitLab, set it as a new remote for your local copy, and push to the default branch. 
 
 1. Setup the integration:
 
@@ -691,7 +472,7 @@ drush cache-rebuild
 <details>
 <summary><strong>Default <code>hash_salt</code> behavior</strong></summary><br/>
 
-Drupal's [default settings set](https://github.com/drupal/drupal/blob/10.3.x/core/assets/scaffold/files/default.settings.php#L252) `hash_salt` to an empty string:
+Drupal's [default settings set](https://github.com/drupal/drupal/blob/10.1.x/core/assets/scaffold/files/default.settings.php#L252) `hash_salt` to an empty string:
 
 ```php
 $settings['hash_salt'] = '';
@@ -739,7 +520,7 @@ This template includes a starting [`.blackfire.yml`](.blackfire.yml) file that c
 
 
 - [Drupal](https://www.drupal.org/)
-- [Drupal 9 on Platform.sh](https://docs.platform.sh/guides/drupal9/deploy.html)
+- [Drupal 10 on Platform.sh](https://docs.platform.sh/guides/drupal10/deploy.html)
 - [Platform.sh PHP documentation](https://docs.platform.sh/languages/php.html)
 
 
@@ -829,4 +610,8 @@ See something that's wrong with this template that needs to be fixed? Something 
 <em>Made with <a href="https://contrib.rocks">contrib.rocks</a><em>
 </p>
 
-<br />
+* [Drupal](https://www.drupal.org/)
+* [Varbase](https://www.drupal.org/project/varbase)
+* [Vardot](https://www.drupal.org/vardot)
+* [Drupal on Platform.sh](https://docs.platform.sh/guides/drupal9/deploy.html)
+* [PHP on Platform.sh](https://docs.platform.sh/languages/php.html)

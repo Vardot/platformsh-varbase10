@@ -1,5 +1,5 @@
 type: drupal10
-docroot: web
+docroot: docroot
 database:
   type: mariadb
   version: "10.4"
@@ -8,7 +8,7 @@ use_dns_when_possible: true
 composer_version: "2.1"
 web_environment: []
 php_version: "8.1"
-nodejs_version: "16"
+nodejs_version: "18"
 
 # Key features of ddev's config.yaml:
 
