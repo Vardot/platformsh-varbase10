@@ -29,11 +29,11 @@ const config = {
     options: {},
   },
   core: {
-    builder: '@storybook/builder-webpack5'
+    builder: '@storybook/builder-webpack5',
+    disableTelemetry: true, // Disables telemetry https://storybook.js.org/telemetry
   },
   docs: {
-    autodocs: "auto",
-    disableTelemetry: true, // Disables telemetry https://storybook.js.org/telemetry
+    autodocs: "auto"
   },
 };
 export default config;
