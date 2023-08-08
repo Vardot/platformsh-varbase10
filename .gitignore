@@ -34,4 +34,3 @@ drush-backups
 
 # Ignore yarn lint dependencies.
 node_modules
-yarn.lock
