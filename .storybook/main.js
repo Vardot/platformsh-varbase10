@@ -32,7 +32,8 @@ const config = {
     builder: '@storybook/builder-webpack5'
   },
   docs: {
-    autodocs: "tag",
+    autodocs: "auto",
+    disableTelemetry: true, // Disables telemetry https://storybook.js.org/telemetry
   },
 };
 export default config;
