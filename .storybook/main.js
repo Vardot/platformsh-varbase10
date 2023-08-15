@@ -34,7 +34,7 @@ const config = {
     disableTelemetry: true, // Disables telemetry https://storybook.js.org/telemetry
   },
   docs: {
-    autodocs: "auto"
+    autodocs: "tag"
   },
 };
 export default config;
