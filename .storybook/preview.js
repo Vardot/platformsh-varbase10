@@ -1,5 +1,6 @@
 import { withRootAttribute } from "storybook-addon-root-attribute";
 export const decorators = [withRootAttribute];
+import process from 'process';
 
 export const globalTypes = {
   rtlDirection: {
@@ -8,7 +9,7 @@ export const globalTypes = {
   },
 };
 
-/** @type { import('@storybook/server').Preview } */
+/** @type { import('@storybook/server-webpack5').Preview } */
 const preview = {
   globals: {
     drupalTheme: 'vartheme_bs5',
@@ -23,7 +24,7 @@ const preview = {
   parameters: {
     server: {
       // Replace this with your Drupal site URL, or an environment variable.
-      url: 'http://varbase.local',
+      url: process.env.STORYBOOK_CL_SERVER_DOMAIN,
     },
     actions: { argTypesRegex: "^on[A-Z].*" },
     controls: {
@@ -65,4 +66,3 @@ const preview = {
 };
 
 export default preview;
-

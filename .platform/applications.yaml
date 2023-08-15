@@ -23,7 +23,7 @@
     relationships:
         database: 'db:mysql'
         redis: 'cache:redis'
-    disk: 1048
+    disk: 2048
     mounts:
         '/docroot/sites/default/files':
             source: local
@@ -71,20 +71,11 @@
                       scripts: false
                   '^/sites/[^/]+/settings.*?\.php$':
                       scripts: false
-            # -------------------------------------------------------------
-            #   Uncomment the following when start a storybook in development or staging
-            #         NOT for production environments.
-            #
-            #    Follow with Integration of Varbase with Storybook
-            #    https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
-            #
-            #         This will allow for origin
-            # -------------------------------------------------------------
-            #   headers:
-            #       Access-Control-Allow-Origin: "*"
-            #       Access-Control-Expose-Headers: "true"
-            #       Access-Control-Max-Age: "false"
-            #       Access-Control-Allow-Credentials: "true"
+              headers:
+                  Access-Control-Allow-Origin: "*"
+                  Access-Control-Expose-Headers: "true"
+                  Access-Control-Max-Age: "false"
+                  Access-Control-Allow-Credentials: "true"
           '/docroot/sites/default/files':
               allow: true
               expires: 5m
@@ -124,71 +115,34 @@
 #         This will allow for a start of a storybook:http upstream
 # -------------------------------------------------------------
 # -   name: storybook
-#     type: php:8.1
+#     type: 'nodejs:18'
 #     source:
 #         root: "/"
 #     dependencies:
 #         php:
 #             "composer/composer": "~2.0"
-#             "drush/drush": "~11.0"
 #         nodejs:
 #             npm: "^6.10"
 #             node: "^18.17"
 #             yarn: "^1.22"
-#     runtime:
-#         extensions:
-#             - redis
-#             - sodium
-#             - apcu
-#             - blackfire
-#             - yaml
-#             - imagick
-#             - memcached
-#             - imap
-#             - pspell
-#             - tidy
-#             - readline
-#             - xsl
-#     relationships:
-#         database: 'db:mysql'
-#         redis: 'cache:redis'
-#     disk: 1048
-#     mounts:
-#         '/docroot/sites/default/files':
-#             source: local
-#             source_path: 'files'
-#         '/tmp':
-#             source: local
-#             source_path: 'tmp'
-#         '/private':
-#             source: local
-#             source_path: 'private'
-#         '/.drush':
-#             source: local
-#             source_path: 'drush'
-#         '/drush-backups':
-#             source: local
-#             source_path: 'drush-backups'
-#         '/.console':
-#             source: local
-#             source_path: 'console'
+#     disk: 512
 #     build:
-#         flavor: composer
+#         flavor: none
+#     variables:
+#         env:
+#             NODE_OPTIONS: --max-old-space-size=4096
+#             STORYBOOK_CL_SERVER_DOMAIN: 'varbase.local'
 #     hooks:
 #         build: |
 #             set -e
-#             echo "NPM version: " ; npm -v
-#             echo "NodeJS version: " ; node -v
-#             echo "Yarn version: " ; yarn -v
 #             cd $PLATFORM_APP_DIR
-#             export NODE_OPTIONS=--max-old-space-size=4096
+#             composer install --ignore-platform-reqs --no-scripts
 #             yarn install --frozen-lockfile
-#             yarn build-storybook
-#         deploy: |
-#             set -e
-#             php ./drush/platformsh_generate_drush_yml.php
-#             cd docroot
-#             $PLATFORM_APP_DIR/drush/platformsh_deploy_drupal.sh
+#             yarn storybook:build
+#         post_deploy: |
+#             cd $PLATFORM_APP_DIR/.storybook/
+#             export STORYBOOK_CL_SERVER_DOMAIN=$(node setup-storybook.js)
+#             echo "STORYBOOK_CL_SERVER_DOMAIN: $STORYBOOK_CL_SERVER_DOMAIN"
 #     web:
 #         locations:
 #             '/':
@@ -202,4 +156,5 @@
 #                     Access-Control-Max-Age: "false"
 #                     Access-Control-Allow-Credentials: "true"
 #         commands:
-#             start: sleep infinity
+#             start: |
+#                 sleep infinity
