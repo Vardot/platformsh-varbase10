@@ -82,7 +82,7 @@ To showcase a custom cloned generated theme, uncomment and modify the following 
 
 ### **Show Custom Vartheme BS5's Components**
 
-To include components from **Vartheme BS5 Starterkit**, uncomment and modify the following line in the `.storybook/main.js` file:\
+To include components from **Vartheme BS5 Starterkit**, uncomment and modify the following line in the `.storybook/main.js` file
 `"../docroot/themes/contrib/vartheme_ba5/components/**/*.stories.@(json|yml)",`
 
 ### Show Custom Theme's Components
@@ -90,7 +90,7 @@ To include components from **Vartheme BS5 Starterkit**, uncomment and modify the
 In case of having a custom theme for a project by
 
 
-To include components from a custom cloned generated theme, uncomment and modify the following line in the `.storybook/main.js` file:
+To include components from a custom cloned generated theme, uncomment and modify the following line in the `.storybook/main.js` file
 
 `"../docroot/themes/custom/mytheme/components/**/*.stories.@(json|yml)",`&#x20;
 
