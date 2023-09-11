@@ -38,7 +38,7 @@ if ($platformsh->hasRelationship('database')) {
 // on development but not production.
 if (isset($platformsh->branch)) {
   // Production type environment.
-  if ($platformsh->branch == 'master' || $platformsh->onDedicated()) {
+  if ($platformsh->onProduction() || $platformsh->onDedicated()) {
     $config['system.logging']['error_level'] = 'hide';
   } // Development type environment.
   else {
@@ -198,6 +198,8 @@ if ($platformsh->hasRelationship($relationship_name)) {
  *   Use the 'development.local.services.yml' file for development or staging, and storybook.
  *        NOT for production environments.
  */
-if (!$platformsh->onProduction() || !$platformsh->onDedicated()) {
-  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/development.local.services.yml';
+if (isset($platformsh->branch)) {
+  if (!$platformsh->onProduction() || !$platformsh->onDedicated()) {
+    $settings['container_yamls'][] = $app_root . '/' . $site_path . '/development.local.services.yml';
+  }
 }
