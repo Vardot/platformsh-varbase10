@@ -168,21 +168,21 @@
                 rules:
                     # Provide a longer TTL (2 weeks) for aggregated CSS and JS files.
                     '^/docroot/sites/default/files/(css|js)':
-                    expires: 2w
-            # -------------------------------------------------------------
-            #   Uncomment the following when start a storybook in development or staging
-            #         NOT for production environments.
-            #
-            #    Follow with Integration of Varbase with Storybook
-            #    https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
-            #
-            #         This will allow for origin
-            # -------------------------------------------------------------
-            #    headers:
-            #        Access-Control-Allow-Origin: "*"
-            #        Access-Control-Expose-Headers: "true"
-            #        Access-Control-Max-Age: "false"
-            #        Access-Control-Allow-Credentials: "true"
+                        expires: 2w
+                # -------------------------------------------------------------
+                #   Uncomment the following when start a storybook in development or staging
+                #         NOT for production environments.
+                #
+                #    Follow with Integration of Varbase with Storybook
+                #    https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
+                #
+                #         This will allow for origin
+                # -------------------------------------------------------------
+                #    headers:
+                #        Access-Control-Allow-Origin: "*"
+                #        Access-Control-Expose-Headers: "true"
+                #        Access-Control-Max-Age: "false"
+                #        Access-Control-Allow-Credentials: "true"
     crons:
         varbase:
             # Run Drupal's cron tasks every 19 minutes.
