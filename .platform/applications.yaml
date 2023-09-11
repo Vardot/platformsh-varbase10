@@ -5,8 +5,8 @@
 # See https://docs.platform.sh/create-apps/multi-app/project-structure.html#unified-app-configuration
 #
 # --------------------------------------------------------------------------------------
-# - varbase:http - A PHP application ( active by default)
-# - storybook:http - A Nodejs application ( start a storybook in development or staging.
+# - `varbase:http` A PHP application ( active by default)
+# - `storybook:http` A Nodejs application ( Uncomment on noted places to start a storybook in development or staging.
 #                                           NOT for production environments.)
 # --------------------------------------------------------------------------------------
 
