@@ -195,7 +195,7 @@ if ($platformsh->hasRelationship($relationship_name)) {
 */
 
 /*
- *   Use the 'development.services.yml' file for development or staging, and storybook.
+ *   Use the 'development.local.services.yml' file for development or staging, and storybook.
  *        NOT for production environments.
  */
 if (!$platformsh->onProduction() || !$platformsh->onDedicated()) {
