@@ -193,3 +193,11 @@ if ($platformsh->hasRelationship($relationship_name)) {
   $config['search_api.server.' . $solr_server_name]['backend_config']['connector_config'] = $platformsh->formattedCredentials($relationship_name, 'drupal-solr');
 }
 */
+
+/*
+ *   Use the 'development.services.yml' file for development or staging, and storybook.
+ *        NOT for production environments.
+ */
+if (!$platformsh->onProduction() || !$platformsh->onDedicated()) {
+  $settings['container_yamls'][] = $app_root . '/' . $site_path . '/development.local.services.yml';
+}
