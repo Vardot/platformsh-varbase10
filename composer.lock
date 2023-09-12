@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93399a4a92a9ac9bec0a35d8bf413cf9",
+    "content-hash": "f2e8adc40e671422d114a1c61203102c",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -23185,57 +23185,6 @@
                 }
             ],
             "time": "2023-09-10T16:09:29+00:00"
-        },
-        {
-            "name": "vardot/varbase-updater",
-            "version": "2.0.47",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Vardot/varbase-updater.git",
-                "reference": "a2378883b4ac91de380e14bf2d974723fa46168b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/varbase-updater/zipball/a2378883b4ac91de380e14bf2d974723fa46168b",
-                "reference": "a2378883b4ac91de380e14bf2d974723fa46168b",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "~2.0",
-                "symfony/yaml": "~3.0 || ~4.0 || ~5.0 || ~6.0"
-            },
-            "bin": [
-                "scripts/update/update-varbase.sh"
-            ],
-            "type": "composer-plugin",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "class": "vardot\\Composer\\Plugin\\VarbaseUpdater"
-            },
-            "autoload": {
-                "psr-4": {
-                    "vardot\\Composer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Vardot",
-                    "homepage": "https://github.com/vardot",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "A set of scripts and tools that will help you to update to the newer versions of Varbase.",
-            "support": {
-                "issues": "https://github.com/vardot/varbase-updater/issues",
-                "source": "https://github.com//vardot/varbase-updater"
-            },
-            "time": "2023-09-10T07:54:21+00:00"
         },
         {
             "name": "webflo/drupal-finder",

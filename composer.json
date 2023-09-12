@@ -30,7 +30,6 @@
     "drupal/core-composer-scaffold": "~10.1.0",
     "drupal/core-project-message": "~10.1.0",
     "vardot/varbase": "~10.0.0",
-    "vardot/varbase-updater": "~2.0.0",
     "drupal/redis": "~1.6.0",
     "drush/drush": "~11.0",
     "platformsh/config-reader": "~2.4.0"
