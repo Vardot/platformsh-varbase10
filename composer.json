@@ -31,7 +31,7 @@
     "drupal/core-project-message": "~10.1.0",
     "vardot/varbase": "~10.0.0",
     "drupal/redis": "~1.6.0",
-    "drush/drush": "~11.0",
+    "drush/drush": "~11.0 || ~12.0",
     "platformsh/config-reader": "~2.4.0"
   },
   "minimum-stability": "dev",
@@ -116,10 +116,6 @@
     "drupal-libraries": {
       "library-directory": "docroot/libraries",
       "libraries": [
-        {"name": "objectfitpolyfill", "package": "bower-asset/objectfitpolyfill"},
-        {"name": "chartjs", "package": "bower-asset/chartjs"},
-        {"name": "c3","package": "bower-asset/c3"},
-        {"name": "d3", "package": "bower-asset/d3"},
         {"name": "dropzone","package": "npm-asset/dropzone"},
         {"name": "blazy", "package": "npm-asset/blazy"},
         {"name": "slick", "package": "npm-asset/slick-carousel"},
