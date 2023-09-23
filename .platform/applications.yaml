@@ -44,7 +44,7 @@
         redis: 'cache:redis'
 
     # The size of the persistent disk of the application (in MB).
-    disk: 2048
+    disk: 1024
 
     # The 'mounts' describe writable, persistent filesystem mounts in the application. 
     mounts:
@@ -209,7 +209,7 @@
             npm: "^6.10"
             node: "^18.17"
             yarn: "^1.22"
-    disk: 512
+    disk: 800
     build:
         flavor: none
     variables:
