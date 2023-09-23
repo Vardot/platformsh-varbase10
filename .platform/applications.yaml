@@ -18,7 +18,7 @@
     dependencies:
         php:
             "composer/composer": "~2.0"
-            "drush/drush": "~11.0 || ~12.0"
+            "drush/drush": "~11.0"
     runtime:
         extensions:
             - sodium
@@ -201,7 +201,7 @@
             npm: "^6.10"
             node: "^18.17"
             yarn: "^1.22"
-    disk: 1024
+    disk: 512
     build:
         flavor: none
     variables:
