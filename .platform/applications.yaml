@@ -25,8 +25,7 @@
             - apcu
             - yaml
             - imagick
-            - memcached
-
+            # - memcached
     # The relationships of the application with services or other applications.
     #
     # The left-hand side is the name of the relationship as it will be exposed
@@ -34,7 +33,7 @@
     # side is in the form `<service name>:<endpoint name>`.
     relationships:
         database: 'db:mysql'
-        cache: 'cache:memcached'
+        # cache: 'cache:memcached'
 
     # The size of the persistent disk of the application (in MB).
     disk: 2048

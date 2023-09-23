@@ -5,7 +5,18 @@
 
 db:
     type: mariadb:10.4
-    disk: 2048
+    disk: 1024
 
-cache:
-  type: memcached:1.4
+# cache:
+#   type: memcached:1.4
+
+#searchsolr:
+#    type: solr:8.0
+#    disk: 1024
+#    configuration:
+#        cores:
+#            maincore:
+#                conf_dir: !archive "solr_8.x_config/"
+#        endpoints:
+#            solr:
+#                core: maincore
