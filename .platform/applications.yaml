@@ -209,7 +209,7 @@
             npm: "^6.10"
             node: "^18.17"
             yarn: "^1.22"
-    disk: 800
+    disk: 512
     build:
         flavor: none
     variables:
