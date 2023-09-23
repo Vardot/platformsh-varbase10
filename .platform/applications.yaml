@@ -20,12 +20,9 @@
             "composer/composer": "~2.0"
             "drush/drush": "~11.0 || ~12.0"
     runtime:
-        # Enable the redis extension so Drupal can communicate with the Redis cache.
         extensions:
-            - redis
             - sodium
             - apcu
-            - blackfire
             - yaml
             - imagick
             - memcached
@@ -41,7 +38,7 @@
     # side is in the form `<service name>:<endpoint name>`.
     relationships:
         database: 'db:mysql'
-        redis: 'cache:redis'
+        cache: 'cache:memcached'
 
     # The size of the persistent disk of the application (in MB).
     disk: 1024
