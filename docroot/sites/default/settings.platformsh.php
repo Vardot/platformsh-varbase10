@@ -195,11 +195,12 @@ if ($platformsh->hasRelationship($relationship_name)) {
 */
 
 /*
+ *   Comment the following NOT to have a Storybook on production environment.
+ *   Uncomment when starting a storybook in development or staging.
  *   Use the 'development.local.services.yml' file for development or staging, and storybook.
- *        NOT for production environments.
  */
-if (isset($platformsh->branch)) {
-  if (!$platformsh->onProduction() || !$platformsh->onDedicated()) {
+// if (isset($platformsh->branch)) {
+//   if (!$platformsh->onProduction() || !$platformsh->onDedicated()) {
     $settings['container_yamls'][] = $app_root . '/' . $site_path . '/development.local.services.yml';
-  }
-}
+//   }
+// }

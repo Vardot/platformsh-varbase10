@@ -17,15 +17,15 @@
     to: "https://{default}/"
 
 # ---------------------------------------------------------------------------
-#   Uncomment the following when start a storybook in development or staging
-#         NOT for production environments.
+#   Comment the following NOT to have a Storybook on production environment.
+#   Uncomment when starting a storybook in development or staging.
 #
-#    Follow with Integration of Varbase with Storybook
-#    https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
+#   Follow with Integration of Varbase with Storybook
+#   https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
 #
-#         This will allow for a storybook sub domain to point
-#         at the storybook:http upstream
+#   This will allow for a storybook sub domain to point
+#   at the storybook:http upstream
 # ---------------------------------------------------------------------------
-# "https://storybook.{default}":
-#     type: upstream
-#     upstream: "storybook:http"
+"https://storybook.{default}":
+    type: upstream
+    upstream: "storybook:http"

@@ -6,8 +6,7 @@
 #
 # --------------------------------------------------------------------------------------
 # - `varbase:http` A PHP application ( active by default)
-# - `storybook:http` A Nodejs application ( Uncomment on noted places to start a storybook in development or staging.
-#                                           NOT for production environments.)
+# - `storybook:http` A Nodejs application ( active by default)
 # --------------------------------------------------------------------------------------
 
 # The name of this app. Must be unique within a project.
@@ -19,7 +18,7 @@
     dependencies:
         php:
             "composer/composer": "~2.0"
-            "drush/drush": "~11.0"
+            "drush/drush": "~11.0 || ~12.0"
     runtime:
         # Enable the redis extension so Drupal can communicate with the Redis cache.
         extensions:
@@ -142,19 +141,19 @@
                     '^/sites/[^/]+/settings.*?\.php$':
                         scripts: false
                 # -------------------------------------------------------------
-                #   Uncomment the following when start a storybook in development or staging
-                #         NOT for production environments.
+                #   Comment the following NOT to have a Storybook on production environment.
+                #   Uncomment when starting a storybook in development or staging.
                 #
-                #    Follow with Integration of Varbase with Storybook
-                #    https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
+                #   Follow with Integration of Varbase with Storybook
+                #   https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
                 #
-                #         This will allow for origin
+                #   This will allow for origin
                 # -------------------------------------------------------------
-                #    headers:
-                #        Access-Control-Allow-Origin: "*"
-                #        Access-Control-Expose-Headers: "true"
-                #        Access-Control-Max-Age: "false"
-                #        Access-Control-Allow-Credentials: "true"
+                headers:
+                    Access-Control-Allow-Origin: "*"
+                    Access-Control-Expose-Headers: "true"
+                    Access-Control-Max-Age: "false"
+                    Access-Control-Allow-Credentials: "true"
             '/docroot/sites/default/files':
                 # Allow access to all files in the public files directory.
                 allow: true
@@ -170,19 +169,19 @@
                     '^/docroot/sites/default/files/(css|js)':
                         expires: 2w
                 # -------------------------------------------------------------
-                #   Uncomment the following when start a storybook in development or staging
-                #         NOT for production environments.
+                #   Comment the following NOT to have a Storybook on production environment.
+                #   Uncomment when starting a storybook in development or staging.
                 #
-                #    Follow with Integration of Varbase with Storybook
-                #    https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
+                #   Follow with Integration of Varbase with Storybook
+                #   https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
                 #
-                #         This will allow for origin
+                #   This will allow for origin
                 # -------------------------------------------------------------
-                #    headers:
-                #        Access-Control-Allow-Origin: "*"
-                #        Access-Control-Expose-Headers: "true"
-                #        Access-Control-Max-Age: "false"
-                #        Access-Control-Allow-Credentials: "true"
+                headers:
+                    Access-Control-Allow-Origin: "*"
+                    Access-Control-Expose-Headers: "true"
+                    Access-Control-Max-Age: "false"
+                    Access-Control-Allow-Credentials: "true"
     crons:
         varbase:
             # Run Drupal's cron tasks every 19 minutes.
@@ -191,55 +190,55 @@
                 start: 'cd docroot ; drush core-cron'
 
 # -------------------------------------------------------------
-#   Uncomment the following when start a storybook in development or staging
-#         NOT for production environments.
+#   Comment the following NOT to have a Storybook on production environment.
+#   Uncomment when starting a storybook in development or staging.
 #
-#    Follow with Integration of Varbase with Storybook
-#    https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
+#   Follow with Integration of Varbase with Storybook
+#   https://docs.varbase.vardot.com/v/10.0.x/developers/theme-development-with-varbase/integration-of-varbase-with-storybook
 #
-#         This will allow for a start of a storybook:http upstream
+#   This will allow for a start of a storybook:http upstream
 # -------------------------------------------------------------
-# -   name: storybook
-#     type: 'nodejs:18'
-#     source:
-#         root: "/"
-#     dependencies:
-#         php:
-#             "composer/composer": "~2.0"
-#         nodejs:
-#             npm: "^6.10"
-#             node: "^18.17"
-#             yarn: "^1.22"
-#     disk: 512
-#     build:
-#         flavor: none
-#     variables:
-#         env:
-#             NODE_OPTIONS: --max-old-space-size=4096
-#             STORYBOOK_CL_SERVER_DOMAIN: 'varbase.local'
-#     hooks:
-#         build: |
-#             set -e
-#             cd $PLATFORM_APP_DIR
-#             composer install --ignore-platform-reqs --no-scripts
-#             yarn install --frozen-lockfile
-#             yarn storybook:build
-#         post_deploy: |
-#             cd $PLATFORM_APP_DIR/.storybook/
-#             export STORYBOOK_CL_SERVER_DOMAIN=$(node setup-storybook.js)
-#             echo "STORYBOOK_CL_SERVER_DOMAIN: $STORYBOOK_CL_SERVER_DOMAIN"
-#     web:
-#         locations:
-#             '/':
-#                 root: 'storybook'
-#                 passthru: true
-#                 index: ["index.html"]
-#                 allow: true
-#                 headers:
-#                     Access-Control-Allow-Origin: "*"
-#                     Access-Control-Expose-Headers: "true"
-#                     Access-Control-Max-Age: "false"
-#                     Access-Control-Allow-Credentials: "true"
-#         commands:
-#             start: |
-#                 sleep infinity
+-   name: storybook
+    type: 'nodejs:18'
+    source:
+        root: "/"
+    dependencies:
+        php:
+            "composer/composer": "~2.0"
+        nodejs:
+            npm: "^6.10"
+            node: "^18.17"
+            yarn: "^1.22"
+    disk: 512
+    build:
+        flavor: none
+    variables:
+        env:
+            NODE_OPTIONS: --max-old-space-size=4096
+            STORYBOOK_CL_SERVER_DOMAIN: 'varbase.local'
+    hooks:
+        build: |
+            set -e
+            cd $PLATFORM_APP_DIR
+            composer install --ignore-platform-reqs --no-scripts
+            yarn install --frozen-lockfile
+            yarn storybook:build
+        post_deploy: |
+            cd $PLATFORM_APP_DIR/.storybook/
+            export STORYBOOK_CL_SERVER_DOMAIN=$(node setup-storybook.js)
+            echo "STORYBOOK_CL_SERVER_DOMAIN: $STORYBOOK_CL_SERVER_DOMAIN"
+    web:
+        locations:
+            '/':
+                root: 'storybook'
+                passthru: true
+                index: ["index.html"]
+                allow: true
+                headers:
+                    Access-Control-Allow-Origin: "*"
+                    Access-Control-Expose-Headers: "true"
+                    Access-Control-Max-Age: "false"
+                    Access-Control-Allow-Credentials: "true"
+        commands:
+            start: |
+                sleep infinity
