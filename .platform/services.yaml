@@ -5,7 +5,7 @@
 
 db:
     type: mariadb:10.4
-    disk: 256
+    disk: 2048
 
 # cache:
 #   type: memcached:1.4
