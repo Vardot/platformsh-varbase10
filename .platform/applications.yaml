@@ -201,13 +201,14 @@
             npm: "^6.10"
             node: "^18.17"
             yarn: "^1.22"
+            pm2: "^5.3"
     disk: 512
     build:
         flavor: none
     variables:
         env:
             NODE_OPTIONS: --max-old-space-size=4096
-            STORYBOOK_CL_SERVER_DOMAIN: 'varbase.local'
+            STORYBOOK_CL_SERVER_DOMAIN: 'demo.varbase.vardot.com'
     hooks:
         build: |
             set -e
@@ -216,8 +217,8 @@
             yarn install --frozen-lockfile
             yarn storybook:build
         post_deploy: |
-            cd $PLATFORM_APP_DIR/.storybook/
-            export STORYBOOK_CL_SERVER_DOMAIN=$(node setup-storybook.js)
+            cd $PLATFORM_APP_DIR
+            export STORYBOOK_CL_SERVER_DOMAIN=$(node .storybook/setup-storybook.js)
             echo "STORYBOOK_CL_SERVER_DOMAIN: $STORYBOOK_CL_SERVER_DOMAIN"
     web:
         locations:
