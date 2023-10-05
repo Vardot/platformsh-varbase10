@@ -32,7 +32,8 @@
     "vardot/varbase": "~10.0.0",
     "drupal/redis": "~1.6.0",
     "drush/drush": "~11.0 || ~12.0",
-    "platformsh/config-reader": "~2.4.0"
+    "platformsh/config-reader": "~2.4.0",
+    "drupal/vardot_support": "~1.0.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
