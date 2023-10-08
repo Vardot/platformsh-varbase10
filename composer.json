@@ -162,7 +162,7 @@
         "https://www.drupal.org/files/issues/2023-08-23/2898635-60.patch"
       },
       "drupal/site": {
-        "Fix deprecated class ContextAwarePluginBase":
+        "Fix deprecated class ContextAwarePluginBase for drupal/site":
         "patches/site/fix-deprecated-class-ContextAwarePluginBase--2023-10-08--16-53.patch"
       }
     },
