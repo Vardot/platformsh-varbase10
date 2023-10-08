@@ -1,0 +1,36 @@
+diff --git a/src/SitePropertyPluginBase.php b/src/SitePropertyPluginBase.php
+index 415c7de..521a173 100644
+--- a/src/SitePropertyPluginBase.php
++++ b/src/SitePropertyPluginBase.php
+@@ -3,8 +3,7 @@
+ namespace Drupal\site;
+ 
+ use Drupal\Component\DependencyInjection\ContainerInterface;
+-use Drupal\Component\Plugin\ContextAwarePluginBase;
+-use Drupal\Component\Plugin\PluginBase;
++use Drupal\Core\Plugin\PluginBase;
+ use Drupal\Core\Entity\EntityTypeInterface;
+ use Drupal\Core\Field\BaseFieldDefinition;
+ use Drupal\Core\Plugin\Context\LazyContextRepository;
+@@ -15,7 +14,11 @@ use Drupal\site\Entity\SiteEntity;
+ /**
+  * Base class for site_property plugins.
+  */
+-abstract class SitePropertyPluginBase extends ContextAwarePluginBase implements SitePropertyInterface {
++abstract class SitePropertyPluginBase extends PluginBase implements SitePropertyInterface {
++
++  use ContextAwarePluginTrait {
++    getContextValue as protected traitGetContextValue;
++  }
+ 
+   use ContextAwarePluginTrait;
+   use ContextAwarePluginAssignmentTrait;
+@@ -105,7 +108,7 @@ abstract class SitePropertyPluginBase extends ContextAwarePluginBase implements
+ 
+       // set the value to the plugin's context, from runtime context value
+       if ($matching_context) {
+-        $this->setContextValue($name,$matching_context->getContextValue());
++        $this->setContextValue($name, $matching_context->traitGetContextValue());
+       }
+     }
+   }
