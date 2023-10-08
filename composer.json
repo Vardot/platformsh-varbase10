@@ -32,8 +32,7 @@
     "vardot/varbase": "~10.0.0",
     "drupal/redis": "~1.6.0",
     "drush/drush": "~11.0 || ~12.0",
-    "platformsh/config-reader": "~2.4.0",
-    "drupal/vardot_support": "~1.1.0"
+    "platformsh/config-reader": "~2.4.0"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -152,27 +151,6 @@
     "patchLevel": {
       "drupal/core": "-p2"
     },
-    "patches": {
-      "drupal/key_auth": {
-        "Issue #3320590: Enable manual updating of key":
-        "https://www.drupal.org/files/issues/2023-09-21/3320590-key_auth_drush_0.patch"
-      },
-      "drupal/core": {
-        "Issue #2898635: [PP-1] bundleFieldDefinitions() are not added in EntityViewsData":
-        "https://www.drupal.org/files/issues/2023-08-23/2898635-60.patch"
-      },
-      "drupal/site": {
-        "Fix deprecated class ContextAwarePluginBase for drupal/site":
-        "patches/site/fix-deprecated-class-ContextAwarePluginBase--2023-10-08--16-53.patch"
-      }
-    },
-    "patches-ignore": {
-      "drupal/site": {
-        "drupal/core": {
-          "Issue #2898635: [PP-1] bundleFieldDefinitions() are not added in EntityViewsData":
-          "https://www.drupal.org/files/issues/2021-11-09/2898635-48.patch"
-        }
-      }
-    }
+    "patches": { }
   }
 }
