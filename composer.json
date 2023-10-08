@@ -152,7 +152,12 @@
     "patchLevel": {
       "drupal/core": "-p2"
     },
-    "patches": {  },
+    "patches": {
+      "drupal/key_auth": {
+        "Issue #3320590: Enable manual updating of key":
+        "https://www.drupal.org/files/issues/2023-09-21/3320590-key_auth_drush_0.patch"
+      }
+    },
     "patches-ignore": {
       "drupal/site": {
         "drupal/core": {
