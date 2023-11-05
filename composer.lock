@@ -126,16 +126,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.7.1",
+            "version": "3.6.4",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
-                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
+                "url": "git@github.com:jquery/jquery-dist.git",
+                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/fde1f76e2799dd877c176abde0ec836553246991",
-                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
+                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
             },
             "type": "bower-asset",
             "license": [
@@ -3031,17 +3031,17 @@
         },
         {
             "name": "drupal/cl_editorial",
-            "version": "2.0.0-beta6",
+            "version": "2.0.0-beta7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/cl_editorial.git",
-                "reference": "2.0.0-beta6"
+                "reference": "2.0.0-beta7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/cl_editorial-2.0.0-beta6.zip",
-                "reference": "2.0.0-beta6",
-                "shasum": "8e5b5eb1d283d77a8e1b1eb534873d13f0db5b11"
+                "url": "https://ftp.drupal.org/files/projects/cl_editorial-2.0.0-beta7.zip",
+                "reference": "2.0.0-beta7",
+                "shasum": "a30e908cb63a987f774a29f5b6af0854cbc83df5"
             },
             "require": {
                 "drupal/core": "^9 || ^10"
@@ -3049,8 +3049,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-beta6",
-                    "datestamp": "1690449658",
+                    "version": "2.0.0-beta7",
+                    "datestamp": "1699047013",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -4472,6 +4472,51 @@
             }
         },
         {
+            "name": "drupal/date_filter",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/date_filter.git",
+                "reference": "1.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/date_filter-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "1878e7c0c204e36a0ec71b29fc8e21e7c23eb797"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.1",
+                    "datestamp": "1684831594",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Grabias",
+                    "homepage": "https://www.drupal.org/u/graber"
+                }
+            ],
+            "description": "Plug and play module replacing core date filters",
+            "homepage": "http://drupal.org/project/date_filter",
+            "support": {
+                "source": "https://git.drupalcode.org/project/date_filter",
+                "issues": "https://drupal.org/project/issues/date_filter"
+            }
+        },
+        {
             "name": "drupal/default_content",
             "version": "dev-2.0.x",
             "source": {
@@ -5677,7 +5722,7 @@
         },
         {
             "name": "drupal/entity_browser_generic_embed",
-            "version": "10.0.0-beta4",
+            "version": "10.0.0-beta5",
             "require": {
                 "drupal/core": "~10.1.0",
                 "drupal/entity_browser": "*",
@@ -5686,8 +5731,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "10.0.0-beta4",
-                    "datestamp": "1697991331",
+                    "version": "10.0.0-beta5",
+                    "datestamp": "1699199681",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -11351,7 +11396,7 @@
         },
         {
             "name": "drupal/sdc_tags",
-            "version": "2.0.0-beta6",
+            "version": "2.0.0-beta7",
             "require": {
                 "drupal/cl_editorial": "^2",
                 "drupal/core": "^10.1"
@@ -11359,8 +11404,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-beta6",
-                    "datestamp": "1690449658",
+                    "version": "2.0.0-beta7",
+                    "datestamp": "1699047013",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -11789,17 +11834,17 @@
         },
         {
             "name": "drupal/simple_sitemap",
-            "version": "4.1.6",
+            "version": "4.1.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-                "reference": "4.1.6"
+                "reference": "4.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-4.1.6.zip",
-                "reference": "4.1.6",
-                "shasum": "5ea5ee97ab4d59b43db86dd6279c3ac5ecbe69b9"
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-4.1.7.zip",
+                "reference": "4.1.7",
+                "shasum": "3d55ee386b0ebb81ed4c3461451a9e32a15d93d7"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -11808,8 +11853,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.1.6",
-                    "datestamp": "1686288643",
+                    "version": "4.1.7",
+                    "datestamp": "1698936269",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14231,17 +14276,17 @@
         },
         {
             "name": "drupal/varbase_core",
-            "version": "10.0.0-rc5",
+            "version": "10.0.0-rc6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_core.git",
-                "reference": "10.0.0-rc5"
+                "reference": "10.0.0-rc6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_core-10.0.0-rc5.zip",
-                "reference": "10.0.0-rc5",
-                "shasum": "26e9529b46f44517ac4b9222972c807f89949a24"
+                "url": "https://ftp.drupal.org/files/projects/varbase_core-10.0.0-rc6.zip",
+                "reference": "10.0.0-rc6",
+                "shasum": "601e38038973f0830340ff70b05487fd4dd2815e"
             },
             "require": {
                 "composer/installers": "~2.0",
@@ -14267,6 +14312,7 @@
                 "drupal/ctools": "~3.0.0 || ~4.0.0",
                 "drupal/ctools_block": "*",
                 "drupal/ctools_views": "*",
+                "drupal/date_filter": "~1.0.1",
                 "drupal/default_content": "2.0.x-dev",
                 "drupal/devel": "~5.1.0",
                 "drupal/diff": "1.1.0",
@@ -14350,8 +14396,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.0-rc5",
-                    "datestamp": "1698683236",
+                    "version": "10.0.0-rc6",
+                    "datestamp": "1699198575",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -14893,17 +14939,17 @@
         },
         {
             "name": "drupal/varbase_media",
-            "version": "10.0.0-beta4",
+            "version": "10.0.0-beta5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_media.git",
-                "reference": "10.0.0-beta4"
+                "reference": "10.0.0-beta5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_media-10.0.0-beta4.zip",
-                "reference": "10.0.0-beta4",
-                "shasum": "bdc94613b6b537c95766eaf4715a6bd33c669392"
+                "url": "https://ftp.drupal.org/files/projects/varbase_media-10.0.0-beta5.zip",
+                "reference": "10.0.0-beta5",
+                "shasum": "5846d28a809155772ba16dff6f7026a11becb4c2"
             },
             "require": {
                 "composer/installers": "~2.0",
@@ -14958,8 +15004,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.0-beta4",
-                    "datestamp": "1697991331",
+                    "version": "10.0.0-beta5",
+                    "datestamp": "1699199681",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -15305,17 +15351,17 @@
         },
         {
             "name": "drupal/vartheme_claro",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/vartheme_claro.git",
-                "reference": "4.0.1"
+                "reference": "4.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/vartheme_claro-4.0.1.zip",
-                "reference": "4.0.1",
-                "shasum": "5b4a3dd8ffdfbd7d75e3dc53589edc7ead650865"
+                "url": "https://ftp.drupal.org/files/projects/vartheme_claro-4.0.2.zip",
+                "reference": "4.0.2",
+                "shasum": "435bad60b3399979c9670a738d3e12304c186fca"
             },
             "require": {
                 "composer/installers": "~2.0",
@@ -15329,8 +15375,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "4.0.1",
-                    "datestamp": "1698761291",
+                    "version": "4.0.2",
+                    "datestamp": "1699187190",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
