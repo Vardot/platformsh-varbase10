@@ -14635,23 +14635,23 @@
         },
         {
             "name": "drupal/varbase_dashboards",
-            "version": "1.0.0-rc1",
+            "version": "1.0.0-rc2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_dashboards.git",
-                "reference": "1.0.0-rc1"
+                "reference": "1.0.0-rc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_dashboards-1.0.0-rc1.zip",
-                "reference": "1.0.0-rc1",
-                "shasum": "a16e9a7108a50f615b2e2d992b089ee4a3389d07"
+                "url": "https://ftp.drupal.org/files/projects/varbase_dashboards-1.0.0-rc2.zip",
+                "reference": "1.0.0-rc2",
+                "shasum": "7c74197213002489174fac8b18b3e0b39b882e5f"
             },
             "require": {
                 "composer/installers": "~2",
                 "cweagans/composer-patches": "~1",
                 "drupal/core": "~10",
-                "drupal/dashboards": "~2",
+                "drupal/dashboards": "2.1.6",
                 "drupal/dashboards_statistic": "*",
                 "drupal/dashboards_views": "*",
                 "drupal/layout_builder_restrictions": "*",
@@ -14662,8 +14662,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-rc1",
-                    "datestamp": "1701197672",
+                    "version": "1.0.0-rc2",
+                    "datestamp": "1702831594",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -14671,7 +14671,11 @@
                 },
                 "enable-patching": true,
                 "composer-exit-on-patch-failure": true,
-                "patches": []
+                "patches": {
+                    "drupal/dashboards": {
+                        "Issue #3409306: Fix calling of a static method on a multilingual Drupal ~10.2.0 under PHP 8.1, 8.2": "https://www.drupal.org/files/issues/2023-12-17/3409306-4.patch"
+                    }
+                }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
