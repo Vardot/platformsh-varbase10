@@ -5127,17 +5127,17 @@
         },
         {
             "name": "drupal/ds",
-            "version": "3.15.0",
+            "version": "3.16.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ds.git",
-                "reference": "8.x-3.15"
+                "reference": "8.x-3.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.15.zip",
-                "reference": "8.x-3.15",
-                "shasum": "cf7ee6bde717dc2d7f10d5f834ca29fb80285d0d"
+                "url": "https://ftp.drupal.org/files/projects/ds-8.x-3.16.zip",
+                "reference": "8.x-3.16",
+                "shasum": "428173ea368534fcc49b0fbdcd76ca2fd238a9d4"
             },
             "require": {
                 "drupal/core": "^9 || ^10"
@@ -5149,8 +5149,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.15",
-                    "datestamp": "1662818537",
+                    "version": "8.x-3.16",
+                    "datestamp": "1703256181",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5843,7 +5843,7 @@
         },
         {
             "name": "drupal/entity_browser_generic_embed",
-            "version": "10.0.0-beta13",
+            "version": "10.0.0-rc1",
             "require": {
                 "drupal/core": "~10",
                 "drupal/entity_browser": "*",
@@ -5852,11 +5852,11 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "10.0.0-beta13",
-                    "datestamp": "1704645644",
+                    "version": "10.0.0-rc1",
+                    "datestamp": "1704717127",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -7398,17 +7398,17 @@
         },
         {
             "name": "drupal/inline_entity_form",
-            "version": "1.0.0-rc15",
+            "version": "1.0.0-rc17",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/inline_entity_form.git",
-                "reference": "8.x-1.0-rc15"
+                "reference": "8.x-1.0-rc17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc15.zip",
-                "reference": "8.x-1.0-rc15",
-                "shasum": "7702801f7e599956fc3d10cff8257809f53ac3ec"
+                "url": "https://ftp.drupal.org/files/projects/inline_entity_form-8.x-1.0-rc17.zip",
+                "reference": "8.x-1.0-rc17",
+                "shasum": "626622e01cf7a2d2977fdc06ae09afd5a814e09b"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -7420,8 +7420,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-rc15",
-                    "datestamp": "1678126675",
+                    "version": "8.x-1.0-rc17",
+                    "datestamp": "1703020130",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -14414,17 +14414,17 @@
         },
         {
             "name": "drupal/varbase_core",
-            "version": "10.0.8",
+            "version": "10.0.9",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_core.git",
-                "reference": "10.0.8"
+                "reference": "10.0.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_core-10.0.8.zip",
-                "reference": "10.0.8",
-                "shasum": "a7214aa2ff92354cfd4ca3709fa5b206bbe67be0"
+                "url": "https://ftp.drupal.org/files/projects/varbase_core-10.0.9.zip",
+                "reference": "10.0.9",
+                "shasum": "71be740c069378e5cb3779d91182f96ae764a4db"
             },
             "require": {
                 "composer/installers": "~2",
@@ -14455,11 +14455,11 @@
                 "drupal/devel": "~5.1.0",
                 "drupal/diff": "1.1.0",
                 "drupal/drd_agent": "4.0.4",
-                "drupal/ds": "3.15.0",
+                "drupal/ds": "3.16.0",
                 "drupal/editoria11y": "~2.1.0",
                 "drupal/email_registration": "~2",
                 "drupal/entity": "~1",
-                "drupal/entity_clone": "~2",
+                "drupal/entity_clone": "2.0.0-beta4",
                 "drupal/entity_reference_revisions": "~1",
                 "drupal/entity_usage": "~2",
                 "drupal/entityqueue": "~1",
@@ -14474,7 +14474,7 @@
                 "drupal/gin_moderation_sidebar": "~1",
                 "drupal/gin_toolbar": "~1",
                 "drupal/honeypot": "~2",
-                "drupal/inline_entity_form": "1.0-rc15",
+                "drupal/inline_entity_form": "1.0-rc17",
                 "drupal/jquery_ui_accordion": "~1 || ~2",
                 "drupal/layout_builder_restrictions": "~2",
                 "drupal/length_indicator": "~1",
@@ -14534,8 +14534,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.8",
-                    "datestamp": "1704401015",
+                    "version": "10.0.9",
+                    "datestamp": "1704718688",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -14612,6 +14612,9 @@
                     },
                     "drupal/ds": {
                         "Issue #3373675: Fix PHP 8.2 Deprecated function: Creation of dynamic property": "https://www.drupal.org/files/issues/2023-12-13/ds-8-x-3-x--3373675-15.patch"
+                    },
+                    "drupal/entity_clone": {
+                        "Issue #3388460: Fatal error on cloning a menu link (D10 site)": "https://www.drupal.org/files/issues/2023-10-17/3388460-7.patch"
                     }
                 }
             },
@@ -15119,17 +15122,17 @@
         },
         {
             "name": "drupal/varbase_media",
-            "version": "10.0.0-beta13",
+            "version": "10.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_media.git",
-                "reference": "10.0.0-beta13"
+                "reference": "10.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_media-10.0.0-beta13.zip",
-                "reference": "10.0.0-beta13",
-                "shasum": "98fb683177e57f512fc89b2e1a2422862ea1c493"
+                "url": "https://ftp.drupal.org/files/projects/varbase_media-10.0.0-rc1.zip",
+                "reference": "10.0.0-rc1",
+                "shasum": "d16584f59bf14b9752f08f71ef543e4b1324c2b9"
             },
             "require": {
                 "composer/installers": "~2",
@@ -15187,11 +15190,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.0-beta13",
-                    "datestamp": "1704645644",
+                    "version": "10.0.0-rc1",
+                    "datestamp": "1704717127",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 },
                 "installer-types": [
@@ -19589,23 +19592,23 @@
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.5.4",
+            "version": "0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dompdf/php-font-lib.git",
-                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4"
+                "reference": "671df0f3516252011aa94f9e8e3b3b66199339f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/dd448ad1ce34c63d09baccd05415e361300c35b4",
-                "reference": "dd448ad1ce34c63d09baccd05415e361300c35b4",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/671df0f3516252011aa94f9e8e3b3b66199339f8",
+                "reference": "671df0f3516252011aa94f9e8e3b3b66199339f8",
                 "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*"
             },
             "require-dev": {
-                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5 || ^6"
             },
             "type": "library",
             "autoload": {
@@ -19615,7 +19618,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-3.0"
+                "LGPL-2.1-or-later"
             ],
             "authors": [
                 {
@@ -19627,9 +19630,9 @@
             "homepage": "https://github.com/PhenX/php-font-lib",
             "support": {
                 "issues": "https://github.com/dompdf/php-font-lib/issues",
-                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.4"
+                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.5"
             },
-            "time": "2021-12-17T19:44:54+00:00"
+            "time": "2024-01-07T18:13:29+00:00"
         },
         {
             "name": "phootwork/collection",
