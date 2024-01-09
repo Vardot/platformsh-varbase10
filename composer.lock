@@ -3445,6 +3445,10 @@
                     "homepage": "https://www.drupal.org/user/172527"
                 },
                 {
+                    "name": "borisson_",
+                    "homepage": "https://www.drupal.org/user/2393360"
+                },
+                {
                     "name": "Gábor Hojtsy",
                     "homepage": "https://www.drupal.org/user/4166"
                 },
@@ -14642,17 +14646,17 @@
         },
         {
             "name": "drupal/varbase_dashboards",
-            "version": "1.0.0-rc2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_dashboards.git",
-                "reference": "1.0.0-rc2"
+                "reference": "1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_dashboards-1.0.0-rc2.zip",
-                "reference": "1.0.0-rc2",
-                "shasum": "7c74197213002489174fac8b18b3e0b39b882e5f"
+                "url": "https://ftp.drupal.org/files/projects/varbase_dashboards-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "b807d7264756315255eef88bf23103339e023239"
             },
             "require": {
                 "composer/installers": "~2",
@@ -14669,8 +14673,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-rc2",
-                    "datestamp": "1702831594",
+                    "version": "1.0.0",
+                    "datestamp": "1704803498",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -14680,7 +14684,9 @@
                 "composer-exit-on-patch-failure": true,
                 "patches": {
                     "drupal/dashboards": {
-                        "Issue #3409306: Fix calling of a static method on a multilingual Drupal ~10.2.0 under PHP 8.1, 8.2": "https://www.drupal.org/files/issues/2023-12-17/3409306-4.patch"
+                        "Issue #3409306: Fix calling of a static method on a multilingual Drupal ~10.2.0 under PHP 8.1, 8.2": "https://www.drupal.org/files/issues/2023-12-17/3409306-4.patch",
+                        "Issue #3356296: Fix Warning: Trying to access array offset on value of type null in the system Info dashboard plugin": "https://www.drupal.org/files/issues/2023-04-25/3356296-2.patch",
+                        "Issue #3413086: Fix Deprecated function: strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated": "https://www.drupal.org/files/issues/2024-01-08/3413086-3.patch"
                     }
                 }
             },
