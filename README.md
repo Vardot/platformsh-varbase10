@@ -157,14 +157,13 @@ If you already have a codebase you are trying to migrate, move onto the next ste
 
 
 ```bash
-$ mkdir varbase10 && cd varbase10
+$ mkdir -p /var/www/html/projects/varbase && cd /var/www/html/projects/varbase
 $ git init
-$ git remote add upstream https://github.com/Vardot/platformsh-varbase10.git
+$ git remote add upstream https://github.com/Vardot/platformsh-varbase.git
 $ git branch -m main
 $ git fetch --all --depth=2
 $ git fetch --all --tags
 $ git merge --allow-unrelated-histories -X theirs 10.0.0
-
 ```
 
 

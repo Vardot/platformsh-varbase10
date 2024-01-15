@@ -1,6 +1,6 @@
 {
   "name": "varbase-project",
-  "description": "Varbase project is a composer starterkit for new projects.",
+  "description": "Varbase project template for platform.sh is a composer starterkit for new projects.",
   "license": "GPL-2.0",
   "private": true,
   "engines": {
