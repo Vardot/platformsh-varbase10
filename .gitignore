@@ -35,3 +35,4 @@ drush-backups
 # Ignore yarn lint dependencies.
 /node_modules
 /docroot/**/node_modules
+/.gitattributes
