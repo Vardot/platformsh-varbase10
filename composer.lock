@@ -10254,6 +10254,10 @@
                     "homepage": "https://www.drupal.org/user/972"
                 },
                 {
+                    "name": "Kristen Pol",
+                    "homepage": "https://www.drupal.org/user/8389"
+                },
+                {
                     "name": "miglius",
                     "homepage": "https://www.drupal.org/user/18741"
                 },
@@ -16016,17 +16020,17 @@
         },
         {
             "name": "drupal/vmi",
-            "version": "3.0.0-beta1",
+            "version": "3.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/vmi.git",
-                "reference": "3.0.0-beta1"
+                "reference": "3.0.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/vmi-3.0.0-beta1.zip",
-                "reference": "3.0.0-beta1",
-                "shasum": "a4f9201af7fefc246b85dcc3f861fe30efa83cfa"
+                "url": "https://ftp.drupal.org/files/projects/vmi-3.0.0-rc1.zip",
+                "reference": "3.0.0-rc1",
+                "shasum": "93dd4fdfaa1be5fe1c70bce15367f19af207a842"
             },
             "require": {
                 "drupal/core": "~10",
@@ -16039,11 +16043,11 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.0-beta1",
-                    "datestamp": "1701190712",
+                    "version": "3.0.0-rc1",
+                    "datestamp": "1707647511",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "message": "RC releases are not covered by Drupal security advisories."
                     }
                 }
             },
