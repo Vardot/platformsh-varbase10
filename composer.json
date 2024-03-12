@@ -54,9 +54,8 @@
       "drupal/core-project-message": true,
       "phpstan/extension-installer": true,
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "vardot/varbase-updater": true,
-      "pyrech/composer-changelogs": true,
-      "php-http/discovery": true
+      "php-http/discovery": true,
+      "pyrech/composer-changelogs": true
     }
   },
   "scripts": {

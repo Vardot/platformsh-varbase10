@@ -217,7 +217,8 @@ $ composer config allow-plugins.drupal/core-composer-scaffold true --no-plugins
 $ composer config allow-plugins.drupal/core-project-message true --no-plugins
 $ composer config allow-plugins.phpstan/extension-installer true --no-plugins
 $ composer config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true --no-plugins
-$ composer config allow-plugins.vardot/varbase-updater true --no-plugins
+$ composer config allow-plugins.php-http/discovery true --no-plugins
+$ composer config allow-plugins.pyrech/composer-changelogs true --no-plugins
 ```
 
 
