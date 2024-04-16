@@ -3,7 +3,7 @@
   "description": "Project template for Varbase distribution.",
   "type": "project",
   "license": "GPL-2.0-or-later",
-  "version": "10.0.0-rc1",
+  "version": "10.0.0-rc2",
   "homepage": "https://www.drupal.org/project/varbase",
   "authors": [
     {
@@ -30,7 +30,9 @@
     "composer/installers": "~2",
     "drupal/core-composer-scaffold": "~10",
     "drupal/core-project-message": "~10",
+    "cweagans/composer-patches": "~1",
     "vardot/varbase": "~10.0.0",
+    "vardot/varbase-patches": "~10.0.0",
     "drupal/redis": "~1.6.0",
     "drush/drush": "~12",
     "platformsh/config-reader": "~2.4.0"
@@ -98,6 +100,7 @@
       "docroot/profiles/contrib/{$name}": ["type:drupal-profile"],
       "docroot/modules/contrib/{$name}": ["type:drupal-module"],
       "docroot/themes/contrib/{$name}": ["type:drupal-theme"],
+      "docroot/recipes/contrib/{$name}": ["type:drupal-recipe"],
       "docroot/libraries/slick": ["npm-asset/slick-carousel"],
       "docroot/libraries/ace": ["npm-asset/ace-builds"],
       "docroot/libraries/jquery-ui-touch-punch": ["bower-asset/jqueryui-touch-punch"],
@@ -113,6 +116,7 @@
       "drush/contrib/{$name}": ["type:drupal-drush"]
     },
     "installer-types": [
+      "drupal-recipe",
       "bower-asset",
       "npm-asset"
     ],
