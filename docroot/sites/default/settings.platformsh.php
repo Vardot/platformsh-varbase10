@@ -12,7 +12,7 @@ $platformsh = new Config();
 
 if (PHP_SAPI !== 'cli') {
   if (defined('MAINTENANCE_MODE') && constant('MAINTENANCE_MODE') === 'install') {
-    ini_set('memory_limit', '2048M');
+    ini_set('memory_limit', '3072M');
   }
   else {
     ini_set('memory_limit', '512M');
