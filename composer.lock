@@ -126,16 +126,16 @@
         },
         {
             "name": "bower-asset/jquery",
-            "version": "3.6.4",
+            "version": "3.7.1",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "url": "https://github.com/jquery/jquery-dist.git",
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/91ef2d8836342875f2519b5815197ea0f23613cf",
-                "reference": "91ef2d8836342875f2519b5815197ea0f23613cf"
+                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/fde1f76e2799dd877c176abde0ec836553246991",
+                "reference": "fde1f76e2799dd877c176abde0ec836553246991"
             },
             "type": "bower-asset",
             "license": [
@@ -2374,6 +2374,10 @@
                 {
                     "name": "sepgil",
                     "homepage": "https://www.drupal.org/user/512828"
+                },
+                {
+                    "name": "sickness29",
+                    "homepage": "https://www.drupal.org/user/2586096"
                 }
             ],
             "description": "Enhanced autocomplete using Jquery UI autocomplete.",
@@ -9351,17 +9355,17 @@
         },
         {
             "name": "drupal/menu_block",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/menu_block.git",
-                "reference": "8.x-1.10"
+                "reference": "8.x-1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.10.zip",
-                "reference": "8.x-1.10",
-                "shasum": "97de632d77448ae0a974e20c2ffbe42c7ddd4633"
+                "url": "https://ftp.drupal.org/files/projects/menu_block-8.x-1.11.zip",
+                "reference": "8.x-1.11",
+                "shasum": "7b2dec26a81177094860b1f884cca5c40b60fa85"
             },
             "require": {
                 "drupal/core": "^9.1 || ^10"
@@ -9369,8 +9373,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.10",
-                    "datestamp": "1667434255",
+                    "version": "8.x-1.11",
+                    "datestamp": "1715036334",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -9399,7 +9403,7 @@
                     "homepage": "https://www.drupal.org/user/370574"
                 },
                 {
-                    "name": "RenatoG",
+                    "name": "renatog",
                     "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
@@ -11494,17 +11498,17 @@
         },
         {
             "name": "drupal/schemadotorg",
-            "version": "1.0.0-alpha22",
+            "version": "1.0.0-alpha23",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/schemadotorg.git",
-                "reference": "1.0.0-alpha22"
+                "reference": "1.0.0-alpha23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/schemadotorg-1.0.0-alpha22.zip",
-                "reference": "1.0.0-alpha22",
-                "shasum": "bd2396d38267c45d979c2ba9c1ee54e0312e4a78"
+                "url": "https://ftp.drupal.org/files/projects/schemadotorg-1.0.0-alpha23.zip",
+                "reference": "1.0.0-alpha23",
+                "shasum": "76c3c75e0fa53ba09245df9bca9e8e759de814a3"
             },
             "require": {
                 "drupal/core": "^10.2",
@@ -11549,6 +11553,7 @@
                 "drupal/schemadotorg_jsonapi": "*",
                 "drupal/schemadotorg_jsonld": "*",
                 "drupal/schemadotorg_media": "*",
+                "drupal/schemadotorg_node": "*",
                 "drupal/schemadotorg_paragraphs": "*",
                 "drupal/simple_sitemap": "^4.0",
                 "drupal/smart_date": "^4.1",
@@ -11567,8 +11572,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-alpha22",
-                    "datestamp": "1714393369",
+                    "version": "1.0.0-alpha23",
+                    "datestamp": "1715018611",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -13286,28 +13291,30 @@
         },
         {
             "name": "drupal/taxonomy_manager",
-            "version": "2.0.10",
+            "version": "2.0.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/taxonomy_manager.git",
-                "reference": "2.0.10"
+                "reference": "2.0.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/taxonomy_manager-2.0.10.zip",
-                "reference": "2.0.10",
-                "shasum": "3857c0d9a8e1b56820816bd7f9135c84651b0616"
+                "url": "https://ftp.drupal.org/files/projects/taxonomy_manager-2.0.11.zip",
+                "reference": "2.0.11",
+                "shasum": "03d50c2702dcf1c2f744ad735ab2037adc422fb1"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
-                "drupal/jquery_ui": "^1.4",
+                "drupal/jquery_ui": "^1.4"
+            },
+            "require-dev": {
                 "drupal/term_merge": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.10",
-                    "datestamp": "1714381408",
+                    "version": "2.0.11",
+                    "datestamp": "1715070672",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -13444,128 +13451,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/taxonomy_menu",
                 "issues": "http://drupal.org/project/taxonomy_menu"
-            }
-        },
-        {
-            "name": "drupal/term_merge",
-            "version": "2.0.0-beta6",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/term_merge.git",
-                "reference": "2.0.0-beta6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/term_merge-2.0.0-beta6.zip",
-                "reference": "2.0.0-beta6",
-                "shasum": "ec81cd7281e409f3d512d9c5bf894f92ab996016"
-            },
-            "require": {
-                "drupal/core": "^9 || ^10 || ^11",
-                "drupal/term_reference_change": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0-beta6",
-                    "datestamp": "1710869688",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "legolasbo",
-                    "homepage": "https://www.drupal.org/u/legolasbo"
-                },
-                {
-                    "name": "daniel_j",
-                    "homepage": "https://www.drupal.org/u/daniel_j"
-                },
-                {
-                    "name": "daniel_j",
-                    "homepage": "https://www.drupal.org/user/970952"
-                },
-                {
-                    "name": "eli",
-                    "homepage": "https://www.drupal.org/user/49774"
-                },
-                {
-                    "name": "G.I.Joe",
-                    "homepage": "https://www.drupal.org/user/111415"
-                },
-                {
-                    "name": "legolasbo",
-                    "homepage": "https://www.drupal.org/user/2480548"
-                },
-                {
-                    "name": "nylin",
-                    "homepage": "https://www.drupal.org/user/816040"
-                }
-            ],
-            "description": "Allows users to merge taxonomy terms in the same vocabulary together.",
-            "homepage": "https://www.drupal.org/project/term_merge",
-            "support": {
-                "source": "https://git.drupal.org/project/term_merge.git",
-                "issues": "https://www.drupal.org/project/issues/term_merge"
-            }
-        },
-        {
-            "name": "drupal/term_reference_change",
-            "version": "2.0.0-beta3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/term_reference_change.git",
-                "reference": "2.0.0-beta3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/term_reference_change-2.0.0-beta3.zip",
-                "reference": "2.0.0-beta3",
-                "shasum": "cf3852936df72039deee075f89448728f8e6155d"
-            },
-            "require": {
-                "drupal/core": "^8.9 || ^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "2.0.0-beta3",
-                    "datestamp": "1677769057",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Anybody",
-                    "homepage": "https://www.drupal.org/user/291091"
-                },
-                {
-                    "name": "Grevil",
-                    "homepage": "https://www.drupal.org/user/3668491"
-                },
-                {
-                    "name": "legolasbo",
-                    "homepage": "https://www.drupal.org/user/2480548"
-                }
-            ],
-            "description": "Allows term references to be changed in bulk.",
-            "homepage": "https://www.drupal.org/project/term_reference_change",
-            "support": {
-                "source": "https://git.drupalcode.org/project/term_reference_change"
             }
         },
         {
@@ -19885,13 +19770,13 @@
             "version": "4.17.21-patch1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lodash/lodash.git",
-                "reference": "c6e281b878b315c7a10d90f9c2af4cdb112d9625"
+                "url": "git@github.com:lodash/lodash.git",
+                "reference": "11eb817cdfacf56c02d7005cbe520ffbeb0fe59a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lodash/lodash/zipball/c6e281b878b315c7a10d90f9c2af4cdb112d9625",
-                "reference": "c6e281b878b315c7a10d90f9c2af4cdb112d9625"
+                "url": "https://api.github.com/repos/lodash/lodash/zipball/11eb817cdfacf56c02d7005cbe520ffbeb0fe59a",
+                "reference": "11eb817cdfacf56c02d7005cbe520ffbeb0fe59a"
             },
             "type": "npm-asset",
             "license": [
@@ -24778,16 +24663,16 @@
         },
         {
             "name": "vardot/varbase-patches",
-            "version": "10.0.15",
+            "version": "10.0.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Vardot/varbase-patches.git",
-                "reference": "d52f6f7444a578bcc15dc7dcad0f486c115cc28d"
+                "reference": "b323d55070b569a4c3b01030a1d5e49df5a7e0d0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/varbase-patches/zipball/d52f6f7444a578bcc15dc7dcad0f486c115cc28d",
-                "reference": "d52f6f7444a578bcc15dc7dcad0f486c115cc28d",
+                "url": "https://api.github.com/repos/Vardot/varbase-patches/zipball/b323d55070b569a4c3b01030a1d5e49df5a7e0d0",
+                "reference": "b323d55070b569a4c3b01030a1d5e49df5a7e0d0",
                 "shasum": ""
             },
             "require": {
@@ -24907,8 +24792,7 @@
                         "Issue #3347958: Fix Entity queries must explicitly set whether the query should be access checked or not in Content Moderation Notifications": "https://www.drupal.org/files/issues/2023-03-14/3347958-2.patch"
                     },
                     "drupal/taxonomy_manager": {
-                        "Issue #3213205: Fix Redirects to external URLs are not allowed by default, after saving a term in Taxonomy Manager": "https://www.drupal.org/files/issues/2024-04-29/3213205-16.patch",
-                        "Issue #3444071: Enable the Term Merge module": "https://www.drupal.org/files/issues/2024-04-30/3444071-taxonomy-manager-mr-31.patch"
+                        "Issue #3213205: Fix Redirects to external URLs are not allowed by default, after saving a term in Taxonomy Manager": "https://www.drupal.org/files/issues/2024-04-29/3213205-16.patch"
                     }
                 }
             },
@@ -24935,9 +24819,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Vardot/varbase-patches/issues",
-                "source": "https://github.com/Vardot/varbase-patches/tree/10.0.15"
+                "source": "https://github.com/Vardot/varbase-patches/tree/10.0.16"
             },
-            "time": "2024-05-01T11:01:32+00:00"
+            "time": "2024-05-07T09:42:05+00:00"
         },
         {
             "name": "webflo/drupal-finder",
