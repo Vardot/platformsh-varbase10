@@ -4053,17 +4053,17 @@
         },
         {
             "name": "drupal/content_planner",
-            "version": "1.1.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/content_planner.git",
-                "reference": "8.x-1.1"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/content_planner-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "9be340b9ae1beb16b4fc12284a0151ba4bb3c1ef"
+                "url": "https://ftp.drupal.org/files/projects/content_planner-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "b67e1593c37d9eba2b11b2fb7cc79ad5dbaffa97"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10",
@@ -4075,8 +4075,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1679589905",
+                    "version": "8.x-1.2",
+                    "datestamp": "1715167168",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5518,20 +5518,20 @@
         },
         {
             "name": "drupal/editoria11y",
-            "version": "2.1.12",
+            "version": "2.1.13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/editoria11y.git",
-                "reference": "2.1.12"
+                "reference": "2.1.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/editoria11y-2.1.12.zip",
-                "reference": "2.1.12",
-                "shasum": "2a3e32c25eebdcdb3c64144b01d7dd4ce2945fec"
+                "url": "https://ftp.drupal.org/files/projects/editoria11y-2.1.13.zip",
+                "reference": "2.1.13",
+                "shasum": "ddaa907927146dd2f5b73f79f629056fbcfd3544"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^9 || ^10 || ^11"
             },
             "conflict": {
                 "drupal/csp": "<1.24"
@@ -5539,8 +5539,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.12",
-                    "datestamp": "1713880633",
+                    "version": "2.1.13",
+                    "datestamp": "1715189851",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6073,7 +6073,7 @@
         },
         {
             "name": "drupal/entity_browser_generic_embed",
-            "version": "10.0.0-rc4",
+            "version": "10.0.0-rc5",
             "require": {
                 "drupal/core": "~10",
                 "drupal/entity_browser": "*",
@@ -6082,8 +6082,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "10.0.0-rc4",
-                    "datestamp": "1714041723",
+                    "version": "10.0.0-rc5",
+                    "datestamp": "1715182269",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -6877,17 +6877,17 @@
         },
         {
             "name": "drupal/focal_point",
-            "version": "2.0.3",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/focal_point.git",
-                "reference": "2.0.3"
+                "reference": "2.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/focal_point-2.0.3.zip",
-                "reference": "2.0.3",
-                "shasum": "5067b249e39c2f93799a4cadfcc3d3dc981f3ef5"
+                "url": "https://ftp.drupal.org/files/projects/focal_point-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "f5be307039e226953598932d30a4eb6b2e9ac7d9"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -6899,8 +6899,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.3",
-                    "datestamp": "1710483189",
+                    "version": "2.1.0",
+                    "datestamp": "1715085292",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -15494,17 +15494,17 @@
         },
         {
             "name": "drupal/varbase_media",
-            "version": "10.0.0-rc4",
+            "version": "10.0.0-rc5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/varbase_media.git",
-                "reference": "10.0.0-rc4"
+                "reference": "10.0.0-rc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/varbase_media-10.0.0-rc4.zip",
-                "reference": "10.0.0-rc4",
-                "shasum": "e6140cf9d73264380f59390edbc262bc904fecb3"
+                "url": "https://ftp.drupal.org/files/projects/varbase_media-10.0.0-rc5.zip",
+                "reference": "10.0.0-rc5",
+                "shasum": "864420f2eab92bc362715efee0042364b254e0b0"
             },
             "require": {
                 "drupal/advanced_text_formatter": "~3",
@@ -15555,8 +15555,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.0.0-rc4",
-                    "datestamp": "1714041723",
+                    "version": "10.0.0-rc5",
+                    "datestamp": "1715182269",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -19788,13 +19788,13 @@
             "version": "4.17.21-patch1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lodash/lodash.git",
-                "reference": "c6e281b878b315c7a10d90f9c2af4cdb112d9625"
+                "url": "git@github.com:lodash/lodash.git",
+                "reference": "11eb817cdfacf56c02d7005cbe520ffbeb0fe59a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lodash/lodash/zipball/c6e281b878b315c7a10d90f9c2af4cdb112d9625",
-                "reference": "c6e281b878b315c7a10d90f9c2af4cdb112d9625"
+                "url": "https://api.github.com/repos/lodash/lodash/zipball/11eb817cdfacf56c02d7005cbe520ffbeb0fe59a",
+                "reference": "11eb817cdfacf56c02d7005cbe520ffbeb0fe59a"
             },
             "type": "npm-asset",
             "license": [
