@@ -14,6 +14,7 @@ if [ -n "$(drush status bootstrap)" ]; then
   else
     echo "No config to import. Skipping."
   fi
+  drush deploy:hook -y
 else
   echo "Drupal not installed. Skipping standard Drupal deploy steps"
 fi
