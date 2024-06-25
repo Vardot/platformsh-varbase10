@@ -33,6 +33,7 @@
     "cweagans/composer-patches": "~1",
     "vardot/varbase": "~10.0.0",
     "vardot/varbase-patches": "~10.0.0",
+    "drupal/gleap-gleap": "~1",
     "drupal/redis": "~1.6.0",
     "drush/drush": "~12",
     "platformsh/config-reader": "~2.4.0"

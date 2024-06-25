@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fbbc2f551d10cdaf41c712c3cb00046d",
+    "content-hash": "c0594b277c90e93764d8e28d2f0b9bc2",
     "packages": [
         {
             "name": "abraham/twitteroauth",
@@ -7392,6 +7392,50 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/gin_type_tray",
                 "issues": "http://drupal.org/project/issues/gin_type_tray"
+            }
+        },
+        {
+            "name": "drupal/gleap-gleap",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gleap.git",
+                "reference": "1.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gleap-1.0.2.zip",
+                "reference": "1.0.2",
+                "shasum": "01bfc947f3d4f45336603b6541b76b84ecdae8f0"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.2",
+                    "datestamp": "1702797775",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Qusai Taha",
+                    "homepage": "https://www.drupal.org/user/3623814"
+                }
+            ],
+            "description": "Gleap service integration.",
+            "homepage": "https://www.drupal.org/project/gleap",
+            "support": {
+                "source": "https://git.drupalcode.org/project/gleap"
             }
         },
         {
