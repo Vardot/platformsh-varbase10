@@ -31,11 +31,12 @@
     "drupal/core-composer-scaffold": "~10",
     "drupal/core-project-message": "~10",
     "cweagans/composer-patches": "~1",
+    "webflo/drupal-finder": "~1.0",
     "vardot/varbase": "~10.0.0",
     "vardot/varbase-patches": "~10.0.0",
     "drupal/gleap-gleap": "~1",
     "drupal/redis": "~1.6.0",
-    "drush/drush": "~12",
+    "drush/drush": "~13",
     "platformsh/config-reader": "~2.4.0"
   },
   "minimum-stability": "dev",
