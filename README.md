@@ -3,13 +3,13 @@
 This project provides a starter kit for Varbase 10.0.x projects hosted on [Platform.sh](http://platform.sh). It
 is very closely based on the [Varbase Composer project](https://github.com/Vardot/varbase-project).
 
-This template builds Drupal ~10.1.0 using the "Drupal Recommended" Composer project.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.
+This template builds Varbase ~10.0.0 using the Varbase Composer project template.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform/applications.yaml`.
 
 Drupal is a flexible and extensible PHP-based CMS framework.
 
 ## Services
 
-- PHP 8.2
+- PHP 8.3
 - MariaDB 10.11
 - Redis 6
 - Drush included
