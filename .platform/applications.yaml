@@ -17,7 +17,7 @@
         root: "/"
     dependencies:
         php:
-            "composer/composer": "^2"
+            "composer/composer": "~2.8.0"
             "drush/drush": "~13"
     runtime:
         extensions:
@@ -191,12 +191,12 @@
 #   This will allow for a start of a storybook:http upstream
 # -------------------------------------------------------------
 -   name: storybook
-    type: 'nodejs:18'
+    type: php:8.3
     source:
         root: "/"
     dependencies:
         php:
-            "composer/composer": "^2"
+            "composer/composer": "~2.8.0"
         nodejs:
             npm: "^6.10"
             node: "^18.17"
