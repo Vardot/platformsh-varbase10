@@ -17,7 +17,7 @@
         root: "/"
     dependencies:
         php:
-            "composer/composer": "~2.3.0"
+            "composer/composer": "~2.8.0"
             "drush/drush": "~13"
     runtime:
         extensions:
